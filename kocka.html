@@ -1,0 +1,62 @@
+<html>
+<head>
+<label for="stranicaAkocke">Uneti duzinu stranice kocke "A":</label>
+  <input id="stranicaAkocke" type="text"/>
+  <label for="stranicaBkocke">Uneti duzinu stranice kocke "B":</label>
+  <input id=stranicaBkocke />
+ <button id="izracunaj">Pritisnuti za izracunavanje:</button>
+  <div id="rezultat1">
+  Rezultat Kocke "A":
+  <img src="kocka1.png" alt="kocka A" width="240" height="240"></div>
+  <div id="rezultat2">
+  Rezultat kocke "B":
+  <img src="slika2.png" alt="kocka B" width="240" height="240"></div>
+</head>
+<body bgcolor="#00CC99">
+
+  <div align="right">
+  <script type="text/javascript">function Kocka(a)
+{
+  a = a ? a : 0;
+  this.setStranica = function(stranica)
+  {
+    a = stranica;
+  };
+  this.zapremina = function()
+  {
+    return a*a*a;  
+  };
+  this.ukupnaduzinastranica = function()
+  {
+    return 12 * a;
+  };
+}
+function prikazi(kocka, id) 
+{
+    document.getElementById(id).insertAdjacentHTML('beforeend', '<p>Zapremina je V=a*a*a i rezultat je:'+kocka.zapremina()+'</p>' +
+'<p>Ukupna duzina svih stranica kocke:'+kocka.ukupnaduzinastranica()+'</p>');
+}
+var kockaa = new Kocka();
+var kockab = new Kocka();
+var dugme = document.getElementById('izracunaj');
+dugme.onclick = function() {
+  kockaa.setStranica(document.getElementById('stranicaAkocke').value);
+  kockab.setStranica(document.getElementById('stranicaBkocke').value);
+  prikazi(kockaa, 'rezultat1');
+  prikazi(kockab, 'rezultat2');
+};
+  </script>
+  </p>
+  </div>
+  <div align="center">Osveziti stranicu radi ponovnog koriscenja:
+  </div>
+  <div align="center">
+    <button type="submit"  onClick="refreshPage()">Osveziti stranicu</button>
+    <script>
+function refreshPage(){
+    window.location.reload();
+} 
+  </script>
+  </div>
+</body>
+</html>

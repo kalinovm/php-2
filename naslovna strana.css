@@ -1,0 +1,159 @@
+body {
+	margin:0;
+	font-size: 14px;
+}
+#wrapper {
+
+width:1010px;
+background-color:#FFFFFF;
+margin: 30px auto;
+padding:15px;
+}
+
+#header {
+background-color:white;
+padding:0px;
+margin-bottom:18Px;
+overflow:hidden;
+}
+#header1 {
+background-color:white;
+padding:0px;
+margin-bottom:18Px;
+overflow:hidden;
+}
+
+#logo {float:left;
+}
+#slogan {float:right;
+font-family: 'Indie Flower', cursive;
+color:#333333;
+font-size:18px;
+font-style:italic;
+margin-top:10px;
+}
+#nav { background-color:#999999;
+height:40px;
+margin-bottom:18px;
+color:#FFFFFF;
+padding:0 10px;
+}
+.social { float:right;
+height:30px;
+padding:5px 0;
+}
+.social a:link, 
+.social a:visited {color:#CCCCCC;
+text-decoration:none;
+transition:2s all ease;
+}
+.social a:hover { color:#66FF66;
+text-decoration:underline;
+transition:4s all ease;
+}
+.social a:active { color:#FF9966;
+text-decoration:none;
+}
+#nav ul { margin:0;
+padding:0;
+list-style:none;
+}
+#nav ul li { float:left;
+position:relative;
+}
+#nav ul li a {padding:10px 15px;
+height:20px;
+display:block;
+}
+#nav ul li ul { background-color:#999999;
+position:absolute;
+left:0;
+top:40px;
+width:150px;
+display:none;
+}
+#nav ul li a:link,
+#nav ul li a:visited { color:#FFFFFF;
+transition:2s all ease;
+}
+#nav ul li a:hover { background:#FF3300;
+color:#FFFFFF;
+text-decoration:none;
+transition:2s all ease;
+}
+#nav ul li a:active { background:#990000;
+}
+#main {
+width:700px;
+float:left;
+transition:3s all ease-in-out;
+}
+#main p {font-family: 'Kavivanar', cursive;
+}
+#main p:first-of-type:first-letter  { 
+   color:red; 
+   font-size:50px; 
+   font-weight:bold;
+   line-height:50px;
+   float:left;
+   display:block;
+   margin:0 5px 0 0; 
+}
+#main h2 {font-family: 'Indie Flower', cursive;
+color:#333333;
+font-size:18px;
+font-style:italic;
+margin-top:10px;
+background:#CCCCCC;
+}
+#sidebar {
+	width:270px;
+	float:right;
+	border:thick;
+	padding:inherit;
+	}
+#sidebar1 { font-family: 'Macondo', cursive;
+	width:270px;
+	float:right;
+	border:thick;
+	padding:inherit;
+}
+#sidebar1 h2 {font-family: 'Macondo', cursive;
+margin:10px;
+color:#0000CC;
+background:#CCCCCC;
+padding:7px;
+}
+#sidebar p {font-family: 'Macondo', cursive;
+}
+
+#footer {
+background-color:#999999;
+clear:both;
+padding:10px;
+text-align:center;
+color:#666666
+}
+#footer p {
+margin:0;
+}
+h1 { font-family: 'Kavivanar', cursive;
+}
+h2 {font-family: 'Macondo', cursive;
+margin:10px;
+color:#FF0000;
+background:#FFFFCC;
+padding:7px;
+}
+p {
+margin:0 0 14px 0;}
+a:link, 
+a:visited {color:#99FF00;
+text-decoration:none;
+}
+a:hover { color:#FF3300;
+text-decoration:underline;
+}
+a:active { color:#FFFF00;
+text-decoration:none;
+}
